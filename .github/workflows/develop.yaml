@@ -1,0 +1,17 @@
+name: Learn Quran build for mvp environment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: MVP build process
+    runs-on: example-runnerdeploy
+    steps:
+      - name: Set up Actions
+        uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
