@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: MVP build process
-    runs-on: example-runnerdeploy
+    runs-on: example
     steps:
       - name: Set up Actions
         uses: actions/checkout@v4
